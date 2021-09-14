@@ -1,0 +1,30 @@
+/* Import Fonts */
+@font-face {
+   font-family: "Druk Cyr";
+   font-style: normal;
+   font-weight: 700;
+   src: local("Druk Cyr"), local("DrukCyr-Bold"),
+      url("../../fonts/DrukCyr-Bold.woff2") format("woff2"),
+      url("../../fonts/DrukCyr-Bold.woff") format("woff"),
+      url("../../fonts/DrukCyr-Bold.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 700;
+   src: local("Roboto"), local("Roboto-Bold"),
+      url("../../fonts/Roboto-Bold.woff2") format("woff2"),
+      url("../../fonts/Roboto-Bold.woff") format("woff"),
+      url("../../fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 400;
+   src: local("Roboto"), local("Roboto-Regular"),
+      url("../../fonts/Roboto-Regular.woff2") format("woff2"),
+      url("../../fonts/Roboto-Regular.woff") format("woff"),
+      url("../../fonts/Roboto-Regular.ttf") format("truetype");
+}
