@@ -4,9 +4,30 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="" />
+      <meta
+         name="description"
+         content="Cтань клиентом bwin и получи фрибет на сумму первой ставки, если она не сыграет"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+      />
+      <link
+         rel="preload"
+         href="./fonts/Roboto-Regular.woff2"
+         as="font"
+         type="font/woff2"
+         crossorigin
+      />
+      <link
+         rel="preload"
+         href="./fonts/Roboto-Bold.woff2"
+         as="font"
+         type="font/woff2"
+         crossorigin
+      />
       <link rel="stylesheet" href="./styles/css/index.css" type="text/css" />
-      <title></title>
+      <title>Bwin</title>
    </head>
    <body>
       <header class="header">
@@ -38,7 +59,20 @@
                </div>
             </div>
             <div class="prevew">
-               <img src="img/squoosh/player.png" alt="" />
+               <picture>
+                  <source
+                     type="image/avif"
+                     srcset="./img/squoosh/player.avif"
+                  />
+                  <source
+                     type="image/webp"
+                     srcset="./img/squoosh/player.webp"
+                  />
+                  <img
+                     src="./img/squoosh/player.png"
+                     alt="Игрок, футболист..."
+                  />
+               </picture>
             </div>
          </section>
       </main>
@@ -49,19 +83,139 @@
          <div class="footer__icons">
             <div class="footer__stors">
                <a href="#" class="link">
-                  <img class="footer__stor--img" src="./img/squoosh/app store.svg" alt="app store" />
+                  <img
+                     class="footer__stor--img"
+                     src="./img/squoosh/app store.svg"
+                     alt="app store"
+                  />
                </a>
                <a href="#" class="link">
-                  <img class="footer__stor--img footer__stor--img--end" src="./img/squoosh/google.svg" alt="app store" />
+                  <img
+                     class="footer__stor--img footer__stor--img--end"
+                     src="./img/squoosh/google.svg"
+                     alt="app store"
+                  />
                </a>
             </div>
             <div class="footer__comands">
-               <img class="footer__comand--img footer__comand--img--first" src="./img/squoosh/1.png" alt="Спортивная команда" />
-               <img class="footer__comand--img" src="./img/squoosh/2.webp" alt="Спортивная команда" />
-               <img class="footer__comand--img" src="./img/squoosh/3.webp" alt="Спортивная команда" />
-               <img class="footer__comand--img footer__comand--img--end" src="./img/squoosh/4.webp" alt="Спортивная команда" />
+               <picture>
+                  <source type="image/avif" srcset="./img/squoosh/1.avif" />
+                  <source type="image/webp" srcset="./img/squoosh/1.webp" />
+                  <img
+                     class="footer__comand--img footer__comand--img--first"
+                     src="./img/squoosh/1.png"
+                     alt="Спортивная команда"
+                  />
+               </picture>
+               <picture>
+                  <source type="image/avif" srcset="./img/squoosh/2.avif" />
+                  <source type="image/webp" srcset="./img/squoosh/2.webp" />
+                  <img
+                     class="footer__comand--img"
+                     src="./img/squoosh/2.png"
+                     alt="Спортивная команда"
+                  />
+               </picture>
+               <picture>
+                  <source type="image/avif" srcset="./img/squoosh/3.avif" />
+                  <source type="image/webp" srcset="./img/squoosh/3.webp" />
+                  <img
+                     class="footer__comand--img"
+                     src="./img/squoosh/3.png"
+                     alt="Спортивная команда"
+                  />
+               </picture>
+               <picture>
+                  <source type="image/avif" srcset="./img/squoosh/4.avif" />
+                  <source type="image/webp" srcset="./img/squoosh/4.webp" />
+                  <img
+                     class="footer__comand--img footer__comand--img--end"
+                     src="./img/squoosh/4.png"
+                     alt="Спортивная команда"
+                  />
+               </picture>
             </div>
          </div>
       </footer>
+      <div class="pop-up__wrapper">
+         <div class="popup__border">
+            <div
+               class="pop-up__card"
+               data-simplebar
+               data-simplebar-auto-hide="false"
+            >
+               <div class="pop-up__toolbox">
+                  <div class="close-button">
+                     <span></span>
+                     <span></span>
+                  </div>
+               </div>
+               <div class="pop-up__content">
+                  <h2>Правила и условия</h2>
+                  <p>
+                     Букмекерская контора Bwin предлагает всем своим новым
+                     клиентам беспроигрышную сделку. Если ваша первая ставка на
+                     сайте букмекера окажется неудачной, компания вернет
+                     проигранную сумму в полном объеме в качестве фрибета. Этот
+                     бонус можно использовать для заключения нового пари, чистый
+                     выигрыш с которого достанется вам. Правда, у кэшбека Bwin
+                     есть ограничение – максимальная сумма, которую готов
+                     компенсировать букмекер, равна 2000 рублей.
+                  </p>
+                  <h2>Как это работает</h2>
+                  <ul class="list">
+                     <li class="list__item">
+                        <p>
+                           Букмекерская контора Bwin предлагает всем своим новым
+                           клиентам беспроигрышную сделку
+                        </p>
+                     </li>
+                     <li class="list__item">
+                        <p>Делаете первую ставку на реальные деньги </p>
+                     </li>
+                     <li class="list__item">
+                        <p>
+                           Если проигрываете, получаете свои деньги назад в
+                           течение 30 минут с момента расчета
+                        </p>
+                     </li>
+                     <li class="list__item">
+                        <p>
+                           Условия акции распространяются на все типы пари,
+                           кроме «суперкоэффициентов» и «комбо+»
+                        </p>
+                     </li>
+                     <li class="list__item">
+                        <p>
+                           Полученный фрибет нужно использовать в течение 7 дней
+                           с момента его предоставления
+                        </p>
+                     </li>
+                  </ul>
+                  <h2>Важные правила</h2>
+                  <ul class="list">
+                     <li class="list__item">
+                        <p>
+                           В акции могут участвовать только новые пользователи
+                           или пользователи, которые до этого не делали ни одной
+                           ставки
+                        </p>
+                     </li>
+                     <li class="list__item">
+                        <p>
+                           Фрибет можно использовать только в мобильных
+                           приложениях Bwin для iOS и Android.
+                        </p>
+                     </li>
+                     <li class="list__item">
+                        <p>Один игрок может получить только один фрибет</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="./js/index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
    </body>
 </html>

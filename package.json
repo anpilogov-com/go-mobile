@@ -18,7 +18,9 @@
   "homepage": "https://github.com/anpilogov-com/go-mobile#readme",
   "dependencies": {
     "del": "^6.0.0",
-    "gulp-htmlmin": "^5.0.1"
+    "gulp-htmlmin": "^5.0.1",
+    "simplebar": "^5.3.5",
+    "smooth-scrollbar": "^8.6.3"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
