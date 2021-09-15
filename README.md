@@ -1,6 +1,8 @@
 # Go Mobile
 Test task for the organization of GO Mobile.
 
+https://anpilogov-com.github.io/go-mobile/src/index.html
+
 # Technological
 Next, the technologies used in the project.
 
