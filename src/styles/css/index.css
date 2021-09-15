@@ -375,7 +375,7 @@ body {
   }
 }
 .footer__pop-up {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 16px;
@@ -389,14 +389,28 @@ body {
   text-decoration-line: underline;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 300px) {
   .footer__pop-up {
+    display: flex;
+    height: 16px;
+  }
+  .footer__pop-up .pop-up {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__pop-up {
+    display: flex;
     height: 18px;
   }
   .footer__pop-up .pop-up {
     font-size: 23px;
   }
 }
+.footer__pop-up.visivle {
+  display: flex;
+}
+
 .footer__icons {
   display: flex;
   flex-direction: row;
@@ -491,23 +505,43 @@ body {
   min-width: 100%;
   min-height: 100%;
   background-color: #000000b3;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: translate(0%, 100%);
 }
 
 .pop-up__active {
   display: flex;
 }
 
+.pop-up__wrapper.pop-up__active {
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
+
 .popup__border {
   position: relative;
-  padding-top: 33px;
-  padding-bottom: 42px;
-  padding-left: 45px;
-  padding-right: 0px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  padding-left: 16px;
+  padding-right: 16px;
   width: 600px;
   height: 600px;
   background-color: #171717;
 }
 
+@media screen and (max-width: 640px) {
+  .popup__border {
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 278px;
+    height: 400px;
+    background-color: #171717;
+  }
+}
 .pop-up__card {
   display: flex;
   justify-content: flex-end;
@@ -545,12 +579,37 @@ body {
   padding-bottom: 32px;
 }
 
+@media screen and (max-width: 640px) {
+  .pop-up__content {
+    padding-top: 43px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+  .pop-up__content h2 {
+    font-size: 16px;
+  }
+  .pop-up__content p {
+    font-size: 12px;
+    padding-right: 23px;
+  }
+  .pop-up__content ul {
+    padding-bottom: 16px;
+    padding-right: 23px;
+  }
+}
 .pop-up__toolbox {
   position: absolute;
   min-width: 64px;
   right: 0px;
 }
 
+@media screen and (max-width: 640px) {
+  .pop-up__toolbox {
+    min-width: 18px;
+    right: 0px;
+    top: 0px;
+  }
+}
 .close-button {
   cursor: pointer;
   position: relative;
@@ -580,6 +639,20 @@ body {
   transition: background-color 0.3s ease 0.2s;
 }
 
+@media screen and (max-width: 640px) {
+  .close-button {
+    min-width: 18px;
+    min-height: 18px;
+  }
+  .close-button > span:nth-child(1) {
+    top: 9px;
+    left: -9px;
+  }
+  .close-button > span:nth-child(2) {
+    top: 5px;
+    left: -6px;
+  }
+}
 .close-button:hover > span:nth-child(1) {
   background-color: #ffcc00;
   transition: background-color 0.3s ease 0.2s;
@@ -610,6 +683,12 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 640px) {
+  .simplebar-track.simplebar-vertical {
+    right: 13px;
+    top: 42px;
+  }
+}
 /* Import Fonts */
 @font-face {
   font-family: "Druk Cyr";
